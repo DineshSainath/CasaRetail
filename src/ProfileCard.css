@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   max-width: 20em;
+  transform: scale(0.9);
 }
 
 .profile-pic {

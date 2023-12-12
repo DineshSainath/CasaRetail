@@ -1,0 +1,33 @@
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 20em;
+  margin: 0 0 0 5em;
+  transform: scale(0.85);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.menu-card:hover {
+  border-bottom: 1px solid gray;
+}
+
+.menu-card.clicked {
+  border-bottom: 1px solid black;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-name {
+  color: gray;
+}
+
+.arrow-link {
+  font-weight: 800;
+  padding-bottom: 2em;
+}
