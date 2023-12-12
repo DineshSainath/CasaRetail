@@ -1,5 +1,40 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 3em;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  /* padding-right: 3em; */
+}
+
+.selected-content {
+  flex-grow: 1;
+}
+
+.content-name {
+  color: #777;
+  margin: 0.5em 0 1em 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.orders-content {
+  margin-right: 5em;
+  margin-bottom: 3em;
+}
+
+.profile-content,
+.orders-content,
+.addresses-content {
+  /* Add your styles for the selected content divs */
+  padding: 10px;
+  border: 2px solid black;
 }

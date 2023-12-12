@@ -1,17 +1,91 @@
+import React, { useState } from 'react'
 import ProfileCard from './ProfileCard'
 import MenuCard from './MenuCard'
 import './Home.css'
+import OrderCard from './OrderCard'
 
 function Home() {
+  const [selectedMenu, setSelectedMenu] = useState('')
+
+  const handleMenuClick = (menuName) => {
+    setSelectedMenu((prevSelectedMenu) =>
+      prevSelectedMenu === menuName ? '' : menuName
+    )
+  }
+
   return (
-    <div>
+    <div className="home-container">
       <div className="nav-heading">Home/Profile</div>
 
-      <ProfileCard />
-      <div className="menu"></div>
-      <MenuCard name="My Profile" subName="Notifications, password" />
-      <MenuCard name="My Orders" subName="Already have 12 orders" />
-      <MenuCard name="Shipping Addresses" subName="3 addresses" />
+      <div className="content-container">
+        <div className="menu">
+          <ProfileCard />
+          <MenuCard
+            name="My Profile"
+            subName="Notifications, password"
+            onClick={() => handleMenuClick('profile')}
+            isSelected={selectedMenu === 'profile'}
+          />
+          <MenuCard
+            name="My Orders"
+            subName="Already have 12 orders"
+            onClick={() => handleMenuClick('orders')}
+            isSelected={selectedMenu === 'orders'}
+          />
+          <MenuCard
+            name="Shipping Addresses"
+            subName="3 addresses"
+            onClick={() => handleMenuClick('addresses')}
+            isSelected={selectedMenu === 'addresses'}
+          />
+        </div>
+
+        <div className="selected-content">
+          {selectedMenu === 'profile' && (
+            <div className="profile-content">My Profile</div>
+          )}
+          {selectedMenu === 'orders' && (
+            <div className="orders-content">
+              <p className="content-name">My Orders</p>
+              <OrderCard
+                orderNo="1"
+                name="Madeup White Cotton Blend Checkered Slim Fit Shirt"
+                deliveryInfo="Express Delivery by Sat, Aug 30"
+                paymentInfo="Credit Card Payment"
+                price="1,899"
+                status="Pending"
+              />
+              <OrderCard
+                orderNo="2"
+                name="Madeup White Cotton Blend Checkered Slim Fit Shirt"
+                deliveryInfo="Express Delivery by Sat, Aug 30"
+                paymentInfo="Credit Card Payment"
+                price="1,899"
+                status="Pending"
+              />
+              <OrderCard
+                orderNo="3"
+                name="Madeup White Cotton Blend Checkered Slim Fit Shirt"
+                deliveryInfo="Express Delivery by Sat, Aug 30"
+                paymentInfo="Credit Card Payment"
+                price="1,899"
+                status="Pending"
+              />
+              <OrderCard
+                orderNo="4"
+                name="Madeup White Cotton Blend Checkered Slim Fit Shirt"
+                deliveryInfo="Express Delivery by Sat, Aug 30"
+                paymentInfo="Credit Card Payment"
+                price="1,899"
+                status="Pending"
+              />
+            </div>
+          )}
+          {selectedMenu === 'addresses' && (
+            <div className="addresses-content">Shipping Addresses</div>
+          )}
+        </div>
+      </div>
     </div>
   )
 }

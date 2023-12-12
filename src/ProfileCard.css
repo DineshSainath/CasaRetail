@@ -1,9 +1,9 @@
 .profile-card {
-  margin: 50px 0 auto 90px;
+  margin: 0 0 1em 4em;
   display: flex;
   align-items: center;
   max-width: 20em;
-  transform: scale(0.9);
+  transform: scale(0.7);
 }
 
 .profile-pic {
