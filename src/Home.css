@@ -46,9 +46,13 @@
     display: none;
   }
 
+  .selected-content {
+    width: 100%;
+  }
+
   .content-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .orders-content {
@@ -56,6 +60,13 @@
   }
 
   .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-card {
     margin: 0 auto;
   }
 
