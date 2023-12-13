@@ -16,7 +16,7 @@ function NavbarComponent() {
         MADE UP
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Collapse id="responsive-navbar-nav" className="collapse">
         <Nav className="me-auto">
           <Nav.Link href="#ForMe" className="mx-4">
             For Me
@@ -41,12 +41,14 @@ function NavbarComponent() {
           </Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link className="mx-2">
+          <Nav.Link className="mx-2 search-icon">
             <BsSearch size={20} />
           </Nav.Link>
-          <Nav.Link className="mx-2">
+          <Nav.Link className="mx-2 cart-icon">
             <IoCartOutline size={25} />
           </Nav.Link>
+        </Nav>
+        <Nav>
           <Nav.Link className="mx-2">
             <CiHeart size={25} />
           </Nav.Link>

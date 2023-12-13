@@ -2,6 +2,7 @@
 
 .footer {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   justify-content: space-between;
   background-color: #333;
   padding: 20px;
@@ -13,6 +14,8 @@
 .center,
 .right {
   flex: 1;
+  margin-bottom: 20px; /* Add some spacing between the sections */
+  max-width: 100%; /* Make sure sections take full width on smaller screens */
 }
 
 .center,
@@ -28,28 +31,21 @@
   margin-top: 20px;
 }
 
-.address {
-  text-align: left;
-  max-width: 50%;
-  margin-bottom: 40px;
-}
-
-.address p {
-  margin-bottom: 5px;
-}
-
+.address,
 .contact {
-  text-align: left;
-  margin-top: 10px;
-  padding-right: 75px;
+  text-align: center; /* Center text on smaller screens */
+  max-width: 100%; /* Ensure text takes full width on smaller screens */
+  margin-bottom: 20px; /* Add some spacing between the sections */
 }
 
+.address p,
 .contact p {
   margin-bottom: 5px;
 }
 
 .socials {
   display: flex;
+  justify-content: center; /* Center social icons on smaller screens */
   gap: 20px;
 }
 
@@ -59,4 +55,25 @@
   max-width: 5em;
   background-color: #e10000;
   font-size: 1.5em;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left,
+  .center,
+  .right {
+    margin: 0 0 4em 0;
+  }
 }

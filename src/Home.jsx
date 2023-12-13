@@ -69,7 +69,7 @@ function Home() {
                 deliveryInfo="Express Delivery by Sat, Aug 30"
                 paymentInfo="Credit Card Payment"
                 price="1,899"
-                status="Delivered"
+                status="Pending"
               />
               <OrderCard
                 orderNo="4"
@@ -77,7 +77,7 @@ function Home() {
                 deliveryInfo="Express Delivery by Sat, Aug 30"
                 paymentInfo="Credit Card Payment"
                 price="1,899"
-                status="Delivered"
+                status="Pending"
               />
             </div>
           )}

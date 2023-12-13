@@ -6,7 +6,7 @@
 .content-container {
   display: flex;
   margin-top: 20px;
-  margin-left: 3em;
+  margin-left: 1em;
 }
 
 .menu {
@@ -39,4 +39,35 @@
   /* Add your styles for the selected content divs */
   padding: 10px;
   border: 2px solid black;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-heading {
+    display: none;
+  }
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .orders-content {
+    margin: 2em;
+  }
+
+  .menu {
+    margin: 0 auto;
+  }
+
+  .selected-content {
+    margin-left: auto;
+  }
+
+  .menu-card {
+    max-width: 79%;
+  }
+
+  .selected-content {
+    order: 2;
+  }
 }
