@@ -1,4 +1,7 @@
 import './Footer.css'
+import { FaFacebook } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaYoutube } from 'react-icons/fa'
 function Footer() {
   return (
     <div className="footer">
@@ -13,6 +16,11 @@ function Footer() {
       <div className="center">
         <p className="logo">MADE UP</p>
         <p> Stay in touch with us </p>
+        <span className="socials">
+          <FaFacebook size={30} />
+          <FaInstagram size={30} />
+          <FaYoutube size={30} />
+        </span>
       </div>
 
       <div className="right">

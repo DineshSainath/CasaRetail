@@ -2,8 +2,8 @@
   color: white;
   padding: 10px 4px 25px 4px;
   background-color: #e10000;
-  margin-left: 60px; /* Adjusted margin */
-  margin-right: 0; /* Removed conflicting margin */
+  margin-left: 60px;
+  margin-right: 0;
 }
 
 .nav {

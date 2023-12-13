@@ -48,9 +48,15 @@
   margin-bottom: 5px;
 }
 
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
 .logo {
   color: white;
-  padding: 2px 4px 25px 4px;
+  padding: 10px 6px 30px 6px;
   max-width: 5em;
   background-color: #e10000;
+  font-size: 1.5em;
 }

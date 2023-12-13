@@ -10,7 +10,6 @@ function OrderCard(props) {
         <p className="no">Order# {props.orderNo}</p>
         <p className="name">{props.name}</p>
         <p className="delivery">{props.deliveryInfo}</p>
-        {/* Add more details as needed */}
       </div>
       <div className="order-tags">
         <p className="payment">{props.paymentInfo}</p>
@@ -18,7 +17,7 @@ function OrderCard(props) {
         <p className="dropDown">
           <FaAngleDown />
         </p>
-        <p className="status">{props.status}</p>
+        <p className={`status ${props.status.toLowerCase()}`}>{props.status}</p>
       </div>
     </div>
   )
