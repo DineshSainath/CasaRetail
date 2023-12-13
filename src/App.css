@@ -3,7 +3,7 @@
   font-family: 'Jost', sans-serif;
 }
 
-.App-header {
+.header {
   background-color: white;
 }
 
@@ -15,4 +15,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.footer {
 }

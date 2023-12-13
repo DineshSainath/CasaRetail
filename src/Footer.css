@@ -1,0 +1,56 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+  color: #bbb;
+  padding-top: 4em;
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+}
+
+.center,
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left p {
+  margin-top: 20px;
+}
+
+.address {
+  text-align: left;
+  max-width: 50%;
+  margin-bottom: 40px;
+}
+
+.address p {
+  margin-bottom: 5px;
+}
+
+.contact {
+  text-align: left;
+  margin-top: 10px;
+  padding-right: 75px;
+}
+
+.contact p {
+  margin-bottom: 5px;
+}
+
+.logo {
+  color: white;
+  padding: 2px 4px 25px 4px;
+  max-width: 5em;
+  background-color: #e10000;
+}
