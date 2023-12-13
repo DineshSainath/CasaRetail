@@ -15,7 +15,10 @@ function NavbarComponent() {
         MADE UP
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav" className="collapse">
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className="collapse text-center"
+      >
         <Nav className="me-auto">
           <Nav.Link href="#ForMe" className="mx-4">
             For Me
