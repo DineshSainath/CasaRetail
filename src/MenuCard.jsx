@@ -12,7 +12,6 @@ function MenuCard(props) {
         <p className="sub-name">{props.subName}</p>
       </div>
       <p className="arrow-link">&gt;</p>
-      <p className="status"></p>
     </div>
   )
 }

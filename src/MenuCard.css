@@ -4,10 +4,11 @@
   /* align-content: flex-start; */
   align-items: center;
   padding: 1px;
-  width: 100%;
-  margin: 1em 0 0 3em;
+  width: 117.5%;
+  margin: 1em 10em 0 0em;
   transform: scale(0.7);
   cursor: pointer;
+  /* margin-right: 10px; */
 }
 
 .menu-card:hover {
@@ -30,5 +31,5 @@
 .arrow-link {
   font-weight: 800;
   padding-bottom: 2em;
-  margin-right: 2em;
+  margin-right: 4em;
 }
