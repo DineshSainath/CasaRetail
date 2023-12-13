@@ -1,0 +1,57 @@
+.form-div {
+  font-family: 'Jost';
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.profile-heading {
+  font-size: 1.5em;
+  margin: 0.5em 0 1em 1em;
+}
+
+.form-row {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 2.7rem;
+}
+
+.error {
+  color: red;
+  margin-top: 0.25rem;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: none;
+}
+
+.form-group .form-control[name='firstName'],
+.form-group .form-control[name='lastName'] {
+  width: 27em;
+}
+
+.btn-primary {
+  align-self: flex-end;
+  background-color: #333;
+  border-radius: 0;
+  padding: 0.7em 1.5em 0.7em 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .form-group .form-control[name='firstName'],
+  .form-group .form-control[name='lastName'] {
+    width: 100%;
+  }
+}

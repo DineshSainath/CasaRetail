@@ -33,6 +33,11 @@
   margin-bottom: 10em;
 }
 
+.profile-content {
+  margin-right: 5em;
+  margin-bottom: 10em;
+}
+
 .profile-content,
 .orders-content,
 .addresses-content {
@@ -53,6 +58,10 @@
   .content-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .profile-content {
+    margin: 2em;
   }
 
   .orders-content {

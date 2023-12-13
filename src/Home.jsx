@@ -3,6 +3,7 @@ import ProfileCard from './ProfileCard'
 import MenuCard from './MenuCard'
 import './Home.css'
 import OrderCard from './OrderCard'
+import ProfileForm from './ProfileForm'
 
 function Home() {
   const [selectedMenu, setSelectedMenu] = useState('')
@@ -42,7 +43,9 @@ function Home() {
 
         <div className="selected-content">
           {selectedMenu === 'profile' && (
-            <div className="profile-content">My Profile</div>
+            <div className="profile-content">
+              <ProfileForm />
+            </div>
           )}
           {selectedMenu === 'orders' && (
             <div className="orders-content">
