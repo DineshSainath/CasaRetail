@@ -28,7 +28,7 @@ const initialValues = {
 
 const MyForm = () => {
   const onSubmit = (values, { setSubmitting }) => {
-    // Handle form submission logic here
+    // Handle form submission
     console.log(values)
     setSubmitting(false)
   }

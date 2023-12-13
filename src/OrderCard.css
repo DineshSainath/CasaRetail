@@ -62,16 +62,15 @@
 }
 
 .order-details {
-  flex-grow: 1; /* Allow the details to take up remaining space */
+  flex-grow: 1;
 }
 
 .order-tags {
-  text-align: right; /* Align tags to the right */
+  text-align: right;
   margin: 0;
   padding: 0;
 }
 
-/* Optional: Style for tags (adjust as needed) */
 .order-card p {
   margin: 0;
 }

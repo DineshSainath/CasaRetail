@@ -13,8 +13,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  /* padding-right: 3em; */
 }
 
 .selected-content {
@@ -41,7 +39,6 @@
 .profile-content,
 .orders-content,
 .addresses-content {
-  /* Add your styles for the selected content divs */
   padding: 10px;
   border: 2px solid black;
 }
