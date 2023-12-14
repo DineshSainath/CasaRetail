@@ -14,6 +14,48 @@ function Home() {
     )
   }
 
+  const menuItems = [
+    {
+      name: 'My Profile',
+      subName: 'Notifications, password',
+      onClick: () => handleMenuClick('profile'),
+      isSelected: selectedMenu === 'profile',
+    },
+    {
+      name: 'My Orders',
+      subName: 'Already have 12 orders',
+      onClick: () => handleMenuClick('orders'),
+      isSelected: selectedMenu === 'orders',
+    },
+    {
+      name: 'Shipping Addresses',
+      subName: '3 addresses',
+      onClick: () => handleMenuClick('addresses'),
+      isSelected: selectedMenu === 'addresses',
+    },
+  ]
+
+  const renderSelectedContent = () => {
+    switch (selectedMenu) {
+      case 'profile':
+        return (
+          <div className="profile-content">
+            <ProfileForm />
+          </div>
+        )
+      case 'orders':
+        return (
+          <div className="orders-content">
+            <Orders />
+          </div>
+        )
+      case 'addresses':
+        return <div className="addresses-content">Shipping Addresses</div>
+      default:
+        return null
+    }
+  }
+
   return (
     <div className="home-container">
       <div className="nav-heading">Home/Profile</div>
@@ -21,41 +63,12 @@ function Home() {
       <div className="content-container">
         <div className="menu">
           <ProfileCard />
-          <MenuCard
-            name="My Profile"
-            subName="Notifications, password"
-            onClick={() => handleMenuClick('profile')}
-            isSelected={selectedMenu === 'profile'}
-          />
-          <MenuCard
-            name="My Orders"
-            subName="Already have 12 orders"
-            onClick={() => handleMenuClick('orders')}
-            isSelected={selectedMenu === 'orders'}
-          />
-          <MenuCard
-            name="Shipping Addresses"
-            subName="3 addresses"
-            onClick={() => handleMenuClick('addresses')}
-            isSelected={selectedMenu === 'addresses'}
-          />
+          {menuItems.map((item, index) => (
+            <MenuCard key={index} {...item} />
+          ))}
         </div>
 
-        <div className="selected-content">
-          {selectedMenu === 'profile' && (
-            <div className="profile-content">
-              <ProfileForm />
-            </div>
-          )}
-          {selectedMenu === 'orders' && (
-            <div className="orders-content">
-              <Orders />
-            </div>
-          )}
-          {selectedMenu === 'addresses' && (
-            <div className="addresses-content">Shipping Addresses</div>
-          )}
-        </div>
+        <div className="selected-content">{renderSelectedContent()}</div>
       </div>
     </div>
   )

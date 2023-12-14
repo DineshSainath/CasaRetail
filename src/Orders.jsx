@@ -38,7 +38,7 @@ function Orders() {
   ]
 
   return (
-    <div>
+    <>
       <p className="content-name">My Orders</p>
 
       {orderData.map((item) => (
@@ -52,7 +52,7 @@ function Orders() {
           status={item.status}
         />
       ))}
-    </div>
+    </>
   )
 }
 
