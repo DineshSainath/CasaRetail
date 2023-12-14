@@ -10,7 +10,7 @@ import { CiHeart } from 'react-icons/ci'
 import { IoPersonOutline } from 'react-icons/io5'
 function NavbarComponent() {
   return (
-    <Navbar collapseOnSelect expand="lg" className=" nav bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="nav bg-body-tertiary">
       <Navbar.Brand className="brand mr-auto" href="#home">
         MADE UP
       </Navbar.Brand>
@@ -20,43 +20,39 @@ function NavbarComponent() {
         className="collapse text-center"
       >
         <Nav className="me-auto">
-          <Nav.Link href="#ForMe" className="mx-4">
-            For Me
-          </Nav.Link>
-          <Nav.Link href="#Jeans" className="mx-4">
-            Jeans
-          </Nav.Link>
-          <Nav.Link href="#Shirts" className="mx-4">
-            Shirts
-          </Nav.Link>
-          <Nav.Link href="#T-Shirts   " className="mx-4">
-            T-Shirts
-          </Nav.Link>
-          <Nav.Link href="#Trousers" className="mx-4">
-            Trousers
-          </Nav.Link>
-          <Nav.Link href="#Joggers" className="mx-4">
-            Joggers
-          </Nav.Link>
-          <Nav.Link href="#Shorts" className="mx-4">
-            Shorts
-          </Nav.Link>
+          {[
+            { href: '#ForMe', text: 'For Me' },
+            { href: '#Jeans', text: 'Jeans' },
+            { href: '#Shirts', text: 'Shirts' },
+            { href: '#T-Shirts', text: 'T-Shirts' },
+            { href: '#Trousers', text: 'Trousers' },
+            { href: '#Joggers', text: 'Joggers' },
+            { href: '#Shorts', text: 'Shorts' },
+          ].map((item, index) => (
+            <Nav.Link key={index} href={item.href} className="mx-4">
+              {item.text}
+            </Nav.Link>
+          ))}
         </Nav>
         <Nav>
-          <Nav.Link className="mx-2 search-icon">
-            <BsSearch size={20} />
-          </Nav.Link>
-          <Nav.Link className="mx-2 cart-icon">
-            <IoCartOutline size={25} />
-          </Nav.Link>
+          {[
+            { icon: <BsSearch size={20} />, href: '#search' },
+            { icon: <IoCartOutline size={25} />, href: '#cart' },
+          ].map((item, index) => (
+            <Nav.Link key={index} href={item.href} className="mx-2">
+              {item.icon}
+            </Nav.Link>
+          ))}
         </Nav>
         <Nav>
-          <Nav.Link className="mx-2">
-            <CiHeart size={25} />
-          </Nav.Link>
-          <Nav.Link className="mx-2">
-            <IoPersonOutline size={20} />
-          </Nav.Link>
+          {[
+            { icon: <CiHeart size={25} />, href: '#heart' },
+            { icon: <IoPersonOutline size={20} />, href: '#profile' },
+          ].map((item, index) => (
+            <Nav.Link key={index} href={item.href} className="mx-2">
+              {item.icon}
+            </Nav.Link>
+          ))}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
