@@ -1,44 +1,45 @@
-/* OrderCard.css */
-
 .order-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd; /* Optional: Add a border for visualization */
-  padding: 20px; /* Optional: Add padding for spacing */
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
   font-size: 0.8em;
   position: relative;
 }
 
 .order-img {
-  width: 90px; /* Adjust the size as needed */
-  height: 90px; /* Set the same height as the width for a square */
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border: 6px solid gray;
   margin-right: 1.5em;
 }
 
+.no,
+.name,
+.price {
+  padding-bottom: 0.2em;
+}
+
 .no {
-  color: #777;
-  padding-bottom: 0.2em;
-}
-.name {
-  max-width: 15em;
-  font-weight: 800;
-  padding-bottom: 0.2em;
-}
-.delivery {
   color: #777;
 }
 
-.payment {
+.name,
+.price {
+  max-width: 15em;
+  font-weight: 800;
+}
+
+.delivery,
+.payment,
+.status.pending {
   color: #777;
 }
 
 .price {
   max-width: 15em;
-  font-weight: 800;
-  padding-bottom: 0.2em;
 }
 
 .status.pending {
@@ -50,15 +51,15 @@
   color: #777777;
   background: #f3f3f3;
 }
+
 .status {
   font-weight: 300;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0;
-  border-radius: 6px 6px 0px 0px;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-radius: 6px 6px 0 0;
+  padding: 0 10px;
 }
 
 .order-details {

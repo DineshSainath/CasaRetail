@@ -1,14 +1,12 @@
 .menu-card {
   display: flex;
   justify-content: space-between;
-  /* align-content: flex-start; */
   align-items: center;
   padding: 1px;
   width: 117.5%;
   margin: 1em 10em 0 0em;
   transform: scale(0.7);
   cursor: pointer;
-  /* margin-right: 10px; */
 }
 
 .menu-card:hover {

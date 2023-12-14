@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ProfileCard from './ProfileCard'
 import MenuCard from './MenuCard'
-import './Home.css'
+import './styles/Home.css'
 import Orders from './Orders'
 import ProfileForm from './ProfileForm'
 

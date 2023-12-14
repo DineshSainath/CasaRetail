@@ -1,5 +1,5 @@
 import React from 'react'
-import './OrderCard.css'
+import './styles/OrderCard.css'
 import { FaAngleDown } from 'react-icons/fa'
 
 function OrderCard(props) {

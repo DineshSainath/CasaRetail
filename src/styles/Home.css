@@ -19,11 +19,7 @@
   flex-grow: 1;
 }
 
-.orders-content {
-  margin-right: 5em;
-  margin-bottom: 10em;
-}
-
+.orders-content,
 .profile-content {
   margin-right: 5em;
   margin-bottom: 10em;
@@ -46,22 +42,16 @@
   }
 
   .content-container {
-    display: flex;
     flex-direction: column;
   }
 
-  .profile-content {
-    margin: 2em;
-  }
-
+  .profile-content,
   .orders-content {
     margin: 2em;
   }
 
   .menu {
     width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -75,9 +65,5 @@
 
   .menu-card {
     max-width: 79%;
-  }
-
-  .selected-content {
-    order: 2;
   }
 }

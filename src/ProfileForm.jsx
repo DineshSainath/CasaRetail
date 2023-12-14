@@ -1,6 +1,6 @@
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
-import './ProfileForm.css'
+import './styles/ProfileForm.css'
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required('First Name is required'),

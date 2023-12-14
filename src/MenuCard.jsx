@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './MenuCard.css'
+import './styles/MenuCard.css'
 import { IoIosArrowForward } from 'react-icons/io'
 import { IoIosArrowDown } from 'react-icons/io'
 

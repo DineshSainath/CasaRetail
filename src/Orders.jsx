@@ -1,4 +1,4 @@
-import './Orders.css'
+import './styles/Orders.css'
 import OrderCard from './OrderCard'
 
 function Orders() {

@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import NavbarComponent from './NavbarComponent.jsx'
 import Home from './Home.jsx'
 import Footer from './Footer'
